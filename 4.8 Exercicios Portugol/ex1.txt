@@ -1,4 +1,4 @@
-// Faça um programa que receba dois números, calcule e mostre a 
+Faça um programa que receba dois números, calcule e mostre a 
 subtração do primeiro número pelo segundo. 
 
 Algoritmo "Exercício 1"
