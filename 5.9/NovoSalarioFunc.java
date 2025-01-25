@@ -8,7 +8,7 @@ public class NovoSalarioFunc {
 		System.out.print("Percentual de aumento: ");
 		perc_aumento = Double.parseDouble(System.console().readLine());
 		
-		val_aumento = salario_atual * perc_aumento / 100;
+		val_aumento = salario_atual * (perc_aumento / 100);
 		novo_sal = salario_atual + val_aumento;
 		
 		System.out.printf("Valor do aumento = R$ %.2f\n", val_aumento);

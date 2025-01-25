@@ -12,7 +12,7 @@ public class SalarioLiquidoProf {
 		perc_inss = Double.parseDouble(System.console().readLine());
 		
 		sal_bruto = valor_hora * horas_trab;
-		desc_inss = perc_inss / 100 * sal_bruto;
+		desc_inss = (perc_inss / 100) * sal_bruto;
 		sal_liq = sal_bruto - desc_inss;
 		
 		System.out.printf("Salario liquido do professor = R$ %.2f", sal_liq);

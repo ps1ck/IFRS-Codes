@@ -16,7 +16,7 @@ início
     idadeAnos <- anoAtual - anoNas 
     idadeMeses <- (anoAtual * 12) - (anoNas * 12)
     idadeDias <- (anoAtual * 365) - (anoNas * 365)
-    idadeSemanas <- (anoAtual * 48) - (anoNas * 48)
+    idadeSemanas <- (anoAtual * 52) - (anoNas * 52)
 
     escreva idadeAnos 
     escreva idadeMeses

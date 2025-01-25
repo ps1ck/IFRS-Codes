@@ -11,5 +11,5 @@ início
     comissao <- valorVendas * 0.04
     Sfinal <- salariofx + comissao 
     escreva comissao 
-    escreva salariofx 
+    escreva Sfinal 
 fim
