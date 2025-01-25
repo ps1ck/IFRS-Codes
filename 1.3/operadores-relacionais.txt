@@ -1,0 +1,34 @@
+Algoritmo “Verifica conceito”
+
+var
+
+conceito: caractere
+
+
+inicio
+
+leia conceito
+
+se conceito <> ‘A’ e conceito <> ‘B’ e conceito <> ‘C’ então
+
+escreva “Conceito inválido”
+
+fim se
+
+se conceito = ‘A’ ou conceito = ‘B’ então
+
+escreva “Aluno aprovado”
+
+fim se
+
+se conceito = ‘C’ então
+
+escreva “Aluno reprovado”
+
+fim se
+
+
+
+
+
+fim

@@ -1,0 +1,23 @@
+Algoritmo “É Zero”
+
+var
+
+numero : inteiro
+
+
+inicio
+
+leia numero
+
+se numero = 0 então
+
+escreva “Você digitou zero.”
+
+fim se
+
+escreva numero
+
+
+
+
+fim

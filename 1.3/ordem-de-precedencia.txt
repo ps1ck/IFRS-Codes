@@ -1,0 +1,98 @@
+Como mencionado antes, devemos tomar cuidado com a ordem de precedência dos operadores usados em testes. A lista abaixo mostra a ordem completa de precedência dos 
+operadores que já estudamos (essa ordem de precedência é baseada na linguagem Java, porém outras linguagens podem ter uma ordem ligeiramente diferente).
+
+
+NÃO
+/ * mod div
++ -
+> >= < <=
+= <> !=
+E
+OU
+
+Para entender em como a precedência de operadores pode impactar no desenvolvimento de testes, vamos ver um exemplo. Imagine a seguinte situação: uma empresa deseja 
+conceder aumento aos seus funcionários que apresentem um conceito de rendimento igual a A ou B e que tenham mais de 3 anos de empresa. Imagine que, para ajudar nesse 
+processo, foi construído o algoritmo abaixo. Esse algoritmo funciona?
+
+
+
+Algoritmo “Verifica aumento de salário”
+
+var
+
+conceito: caractere
+
+tempo: inteiro
+
+
+inicio
+
+leia conceito, tempo
+
+se conceito = ‘A’ ou conceito = ’B’ e tempo > 3 então
+
+escreva “O funcionário deve receber aumento”
+
+senão
+
+       escreva “O funcionário não deve receber aumento”
+
+fim se
+
+
+
+fim
+
+
+
+Imagine um caso em que se informe A para o conceito e 2 para o tempo de serviço. Neste caso, o funcionário NÃO deveria receber um aumento de salário. Porém, o algoritmo 
+vai dizer que o funcionário DEVE receber um aumento. Por quê? Vamos analisar a expressão passo a passo. Primeiramente, de acordo com nossa tabela de precedência, o 
+operador > será verificado primeiro. Como o valor da variável tempo, em nosso exemplo, é 2, temos que “tempo > 3” resulta em falso. Colocando esse valor na expressão temos:
+
+conceito = ‘A’ ou conceito = ’B’ e F
+
+As próximas operações a serem avaliadas são as de igualdade. Como o conceito informado foi A, temos:
+
+V ou F e F
+
+                E agora? Segundo a Tabela 6.4 a próxima operação a ser avaliada é o operador E. Como “F e F” é igual a F, temos que:
+
+V ou F
+
+que resulta em VERDADEIRO!
+O problema de nosso algoritmo está na ordem de avaliação dos operadores. Para podermos alterar isso precisamos utilizar parênteses. O algoritmo abaixo é o anterior 
+modificado para corrigir esse problema, utilizando parênteses em torno da parte da expressão de teste com operador OU, para forçar este operador a ser avaliado antes 
+do operador E.
+
+
+
+Algoritmo “Verifica aumento de salário”
+
+var
+
+conceito: caractere
+
+tempo: inteiro
+
+
+inicio
+
+leia conceito, tempo
+
+se (conceito = ‘A’ ou conceito = ’B’) e tempo > 3 então
+
+escreva “O funcionário deve receber aumento”
+
+senão
+
+       escreva “O funcionário não deve receber aumento”
+
+fim se
+
+
+
+fim
+
+
+Por isso, aí vai o aviso: MUITO CUIDADO AO MONTAR UM TESTE COM VÁRIOS OPERADORES DIFERENTES. Cheque com calma a ordem de precedência dos operadores envolvidos
+e verifique a necessidade de uso de parênteses.

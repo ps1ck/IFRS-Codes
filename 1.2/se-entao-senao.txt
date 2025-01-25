@@ -1,0 +1,27 @@
+Algoritmo “Cálculo da média de um aluno melhorado”
+
+var
+
+    N1, N2, N3, N4, RES: real
+
+início
+
+    leia N1, N2, N3, N4
+
+    RES ← (N1 + N2 + N3 + N4) / 4
+
+    escreva RES
+
+ 
+
+    se RES >= 7 então   
+
+         escreva “Aprovado”
+
+    senão
+
+         escreva “Reprovado”
+
+    fim se
+
+fim
