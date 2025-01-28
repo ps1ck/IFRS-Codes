@@ -1,0 +1,21 @@
+Algoritmo “Verifica se um número é par ou ímpar”
+
+var
+
+     numero: inteiro
+
+início
+
+     leia numero
+
+     se numero mod 2 = 0 então
+
+          escreva “O número é par”
+
+     senão
+
+          escreva “O número é ímpar”
+
+     fim se
+
+fim
