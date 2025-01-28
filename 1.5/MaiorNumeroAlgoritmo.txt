@@ -1,0 +1,35 @@
+Algoritmo “Maior de Dois Números”
+
+var
+
+     n1, n2: real
+
+início
+
+     leia n1, n2
+
+    
+
+     se n1 > n2 então
+
+          escreva n1
+
+     fim se
+
+    
+
+     se n2 > n1 então
+
+          escreva n2
+
+     fim se
+
+ 
+
+     se n1 = n2 então
+
+          escreva “Os números são iguais”
+
+     fim se
+
+fim
