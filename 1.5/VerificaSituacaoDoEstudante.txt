@@ -1,0 +1,43 @@
+Algoritmo “Verifica Situação do Estudante”
+
+var
+
+     n1, n2, n3, media, notaExame: real
+
+início
+
+     leia n1, n2, n3
+
+     media ← (n1 + n2 + n3) / 3
+
+     escreva media
+
+ 
+
+     se media >= 0 e media < 3 então
+
+          escreva “Reprovado”
+
+     fim se
+
+    
+
+     se media >= 3 e media < 7 então
+
+          escreva “Exame”
+
+          notaExame <- 12 – media
+
+          escreva notaExame
+
+     fim se
+
+ 
+
+     se media >= 7 então
+
+          escreva “Aprovado”
+
+     fim se
+
+fim
