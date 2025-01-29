@@ -1,0 +1,31 @@
+/* Muito semelhante ao programa de media com FLAG, só aqui a flag (sentinela) seria o 0 e não um número negativo */
+
+Algoritmo “Calcula função”
+
+var
+
+
+x, fx : real
+
+
+início
+
+
+leia x
+
+
+enquanto x != 0 faça
+
+
+fx ← x*x – 5*x + 6
+
+
+escreva fx;
+
+
+leia x
+
+
+fim enquanto
+
+fim

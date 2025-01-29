@@ -1,0 +1,28 @@
+Algoritmo “Cálculo do fatorial de um número”
+
+var
+
+numero, valor, fatorial : inteiro
+
+
+início
+
+leia numero
+
+valor ← 2
+
+fatorial ← 1
+
+enquanto valor <= numero faça
+
+fatorial ← fatorial * valor
+
+valor ← valor + 1
+
+fim enquanto
+
+escreva fatorial
+
+
+
+fim
