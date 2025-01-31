@@ -5,7 +5,7 @@ média entre os n primeiros números inteiros positivos. */
 public class Exe2 {
     public static void main(String[] args) {
 
-        int Cn = 0, Cv = 0, auxV = 0,auxN =0, n;
+        int Cv, auxV = 0,auxN =0, n;
         double numero, soma = 0, media, quadrado = 0, somatorio;
         System.out.println("Digite quantas vezes você quer digitar um número: ");
         Cv = Integer.parseInt(System.console().readLine());
