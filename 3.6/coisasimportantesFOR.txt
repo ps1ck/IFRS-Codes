@@ -1,0 +1,81 @@
+Como já mencionado, os blocos inicialização e pós-incremento também podem conter várias instruções, que devem ser separadas por 
+vírgulas. Isto permite ao programador utilizar múltiplas expressões de inicialização e/ou múltiplas expressões de incremento/decremento.
+ Por exemplo, podem existir várias variáveis de controle em uma única estrutura for que devem ser inicializadas e incrementadas. 
+ Poderíamos reescrever o for do programa de cálculo da média da turma da forma mostrada abaixo:
+
+...
+
+System.out.print("Numero de estudantes da turma: ");
+
+nro_estudantes = Integer.parseInt(System.console().readLine());
+
+ 
+
+for(notaslidas = 0, soma = 0; notaslidas < nro_estudantes; soma = soma + nota, notaslidas = notaslidas + 1) {
+
+     System.out.printf("Nota %d: ", notaslidas+1);
+
+     nota = Integer.parseInt(System.console().readLine());
+
+}
+
+...
+
+
+O cabeçalho da estrutura for foi escrito em várias linhas para melhorar a clareza. Note que juntamos várias instruções em uma mesma 
+linha, o que pode ser bem confuso. Por isso a dica para você que está iniciando na arte de programar é: evite esse tipo de coisa. 
+Procure fazer isso quando já estiver mais experiente. A confusão provocada pode dificultar entendimento do seu próprio código e 
+complicar a procura por erros.
+
+A variável contadora pode ser declarada dentro do bloco inicialização. Neste caso, a variável só pode ser utilizada dentro da 
+estrutura for em que foi declarada, como mostrado abaixo:
+
+
+
+int a = 0, b = 1, c;
+
+for( int cont = 1; cont <= 10; cont = cont + 1) {
+
+a = a + cont;
+
+b = b * cont;
+
+
+}
+
+c = cont; // ERRO: cont não pode ser usada fora do laço for acima.
+
+
+As três partes do cabeçalho da estrutura for são opcionais. Se o teste for omitido, Java assume que a condição do laço seja true, 
+criando assim um loop infinito. Pode-se omitir inicialização se o programa inicializa a variável de controle antes do laço, como 
+mostrado abaixo:
+
+
+
+int a = 0, cont = 1;
+
+for( ; cont <= 10; cont = cont + 1 )
+
+a = a + cont;
+
+
+
+Pode-se omitir pós-repetição se o programa calcular o incremento com instruções no corpo do laço ou se o laço não exigir um incremento.
+ O exemplo abaixo mostra um laço for em que a última seção do cabeçalho foi omitida:
+
+
+
+int a = 0;
+
+for( int cont = 1; cont <= 10; ) {
+
+a = a + cont;
+
+cont = cont + 1;
+
+}
+
+
+
+É claro que omitir essas partes da estrutura for nos faz questionar a sua utilidade no lugar de uma estrutura while. Nos exercícios
+ deste capítulo, utilize a forma completa da estrutura.
