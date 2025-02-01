@@ -1,0 +1,37 @@
+Algoritmo “Cálculo da média de notas de uma turma”
+
+var
+
+nro_estudantes soma, nota, notaslidas : inteiro
+
+media : real
+
+
+início
+
+leia nro_estudantes
+
+ 
+
+soma ← 0
+
+ 
+
+para notaslidas de 0 até nro_estudantes-1 passo de 1 faça
+
+leia nota
+
+soma ← soma + nota
+
+fim para
+
+ 
+
+media ← soma / nro_estudantes
+
+escreva media
+
+
+
+
+fim

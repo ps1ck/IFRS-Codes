@@ -1,0 +1,28 @@
+switch( expressão ) {
+
+case valor1:
+
+conjunto de instruções 1
+
+break;
+
+case valor2:
+
+conjunto de instruções 2
+
+break;
+
+case valor3:
+
+conjunto de instruções 3
+
+break;
+
+...
+
+default:
+
+conjunto de instruções n
+
+
+}

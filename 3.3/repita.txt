@@ -1,0 +1,59 @@
+/* Ela funciona de forma muito parecida a um enquanto, mas possui duas diferenças marcantes:
+
+- O conjunto de instruções será executado primeiro, e depois o teste será verificado. Isso quer dizer que, 
+ao contrário da estrutura enquanto, o conjunto de instruções será executado pelo menos uma vez.
+- O conjunto de instruções é repetido enquanto teste for falso ou, em outras palavras, até que ele seja verdadeiro. 
+Isso é exatamente o oposto do que acontece em uma estrutura enquanto, onde o conjunto de instruções é repetido enquanto a 
+condição for verdadeira. Como exemplo, imagine o seguinte problema: você deve escrever um programa que repita leitura de 
+um número até que o usuário digite o valor oito. A solução deste problema utilizando a estrutura repita é mostrada no algoritmo abaixo.
+*/
+
+
+Algoritmo “Repete leitura”
+
+var
+
+numero : inteiro
+
+
+início
+
+repita
+
+leia numero
+
+até que numero = 8
+
+escreva “Você acertou o número!”
+
+
+
+fim
+
+
+/* Este mesmo algoritmo utilizando uma estrutura enquanto ficaria como mostrado abaixo: */
+
+
+
+Algoritmo “Repete leitura”
+
+var
+
+numero : inteiro
+
+
+início
+
+leia numero
+
+enquanto numero <> 8 faça
+
+leia numero
+
+fim enquanto
+
+escreva “Você acertou o número!”
+
+
+
+fim

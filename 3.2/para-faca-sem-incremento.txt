@@ -1,0 +1,27 @@
+/* Se o incremento for 1 não precisa digitar, o programa entende que se não for digita é 1, sempre. */
+
+
+Algoritmo “Cálculo do fatorial de um número”
+
+var
+
+numero, valor, fatorial : inteiro
+
+
+início
+
+leia numero
+
+fatorial ← 1
+
+para valor de 2 até numero faça
+
+fatorial ← fatorial * valor
+
+fim para
+
+escreva fatorial
+
+
+
+fim
