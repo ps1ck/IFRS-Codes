@@ -1,0 +1,23 @@
+Algoritmo “Verificação de Triângulo – versão 1”
+
+var
+
+
+A, B, C : real
+
+
+início
+
+      leia A, B, C
+
+      se A + B > C e A + C > B e B + C > A então
+
+            escreva “As medidas informadas formam um triângulo”
+
+      senão
+
+            escreva “As medidas informadas NÃO formam um triângulo”
+
+      fim se
+
+fim

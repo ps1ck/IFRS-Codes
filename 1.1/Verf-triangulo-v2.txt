@@ -1,0 +1,39 @@
+Algoritmo “Verificação de Triângulo (versão 2)”
+
+var
+
+
+A, B, C : real
+
+
+início
+
+       leia A, B, C
+
+       se A + B > C e A + C > B e B + C > A então
+
+              se A = B e B = C então
+
+                    escreva “As medidas formam um triângulo EQUILÁTERO”
+
+             senão
+
+                    se A != B e A != C e B != C então
+
+                           escreva “As medidas formam um triângulo ESCALENO”
+
+                    senão
+
+                           escreva “As medidas formam um triângulo ISÓSCELES”
+
+                    fim se
+
+             fim se
+
+       senão
+
+             escreva “As medidas informadas NÃO formam um triângulo”
+
+       fim se
+
+fim
