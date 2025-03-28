@@ -1,0 +1,25 @@
+/* A série de Fibonacci é formada pela seguinte sequência: 1, 1, 2, 3, 5, 8, 13, 
+21, 34, 55, ... etc, onde o próximo número é igual a soma dos dois anteriores. 
+Escreva um programa que gere os dez primeiros números da série de 
+Fibonacci, utilizando estruturas repita e do...while.  */
+
+Algoritmo "AlgoritmoExercicio9"
+
+var
+
+i = 0, z, x = 0, y = 1 : inteiro
+
+início
+
+    repita 
+
+    z <- x + y
+    escreva z
+    x <- y
+    y <- z
+
+    i <- i + 1
+
+    até que i == 10
+
+fim

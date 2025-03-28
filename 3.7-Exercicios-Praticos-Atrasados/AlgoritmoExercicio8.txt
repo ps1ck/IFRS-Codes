@@ -1,0 +1,21 @@
+/* . Faça um algoritmo e um programa, utilizando as estruturas repita e do..while 
+que repita a leitura de uma senha até que o usuário digite o número 1234. Após 
+isso, mostrar a mensagem “Senha correta, acesso liberado.”  */
+
+Algoritmo "AlgoritmoExercicio8"
+
+var
+
+numero : inteiro
+
+início
+
+    repita
+        
+        leia numero
+
+    até que numero == 1234
+
+    escreva "Senha correta, acesso liberado."
+
+fim
