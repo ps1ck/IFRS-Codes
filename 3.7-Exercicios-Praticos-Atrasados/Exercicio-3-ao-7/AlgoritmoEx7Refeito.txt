@@ -1,0 +1,21 @@
+/* 3 a 7. Refaça os exercícios 1, 2, 5, 6, 7 do caderno de exercícios do módulo 
+anterior utilizando as estruturas para..faça e for. 
+
+Exercício 7:
+Faça um programa que apresente os quadrados dos números inteiros de 
+15 a 200.
+*/
+
+Algoritmo "AlgoritmoEx7Refeito"
+
+var 
+
+i,q : inteiros
+
+início 
+
+    para i de 15 até 201 passo de 1 faça
+        q <- i*i 
+        escreva q
+
+fim

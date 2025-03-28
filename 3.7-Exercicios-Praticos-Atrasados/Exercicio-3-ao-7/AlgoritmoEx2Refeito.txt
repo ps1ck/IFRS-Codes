@@ -1,0 +1,36 @@
+/* 3 a 7. Refaça os exercícios 1, 2, 5, 6, 7 do caderno de exercícios do módulo 
+anterior utilizando as estruturas para..faça e for. 
+
+Exercício 2:
+Faça um programa que calcule o somatório, a soma dos quadrados e a 
+média entre os n primeiros números inteiros positivos.
+*/
+
+Algoritmo "AlgoritmoEx2Refeito"
+
+var
+
+qtd, i, qtdNip = 0 : inteiro
+n, quadrados, sNI = 0, media, somatorio : real
+
+início
+
+      leia qtd
+      
+      para i de 0 até qtd passo de 1 faça
+
+            leia n 
+            quadrados <- quadrados + (n*n)
+
+            se n >= 0 && (n%1) == 0 então
+                  escreva "É um inteiro positivo"
+                  sNI <- sNI + n
+                  qtdNip <- qtdNip + 1
+            senão
+                  escreva "Não é um inteiro positivo"
+
+media = sNI / qtdNip
+somatorio = quadrados + media
+escreva somatorio
+
+fim

@@ -1,0 +1,30 @@
+/* 3 a 7. Refaça os exercícios 1, 2, 5, 6, 7 do caderno de exercícios do módulo 
+anterior utilizando as estruturas para..faça e for.
+
+Exercício 5:
+Crie um programa para ler a quantidade de litros de combustível e a 
+distância percorrida por um carro em várias viagens. O programa deve 
+calcular o consumo médio do carro, que é igual a média de quilômetros 
+por litro de todas as viagens. O número de viagens realizado deve ser 
+informado pelo usuário.
+*/
+
+Algoritmo "AlgoritmoEx5Refeito"
+
+var
+
+lc, dp, cm, soma = 0 : real
+qtdV,i : inteiro
+
+início
+
+    leia qtdV
+
+    para i de 0 até qtdV passo de 1 faça
+        leia lc, dp
+        soma <- soma + (dp/lc)
+
+    cm = soma / qtdV
+    escreva cm
+
+fim

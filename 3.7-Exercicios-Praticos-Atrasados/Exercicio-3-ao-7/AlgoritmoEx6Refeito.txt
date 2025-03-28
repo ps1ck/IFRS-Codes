@@ -1,0 +1,35 @@
+/* 3 a 7. Refaça os exercícios 1, 2, 5, 6, 7 do caderno de exercícios do módulo 
+anterior utilizando as estruturas para..faça e for. 
+
+Exercício 6:
+Para cada uma das mercadorias com que um armazém trabalha dispõe
+se dos seguintes dados: 
+−  o nome da mercadoria; 
+−  o seu preço unitário; 
+−  a quantidade total vendida no mês. 
+Elabore um programa para calcular o faturamento total mensal do armazém. O 
+faturamento total do armazém será calculado somando-se o total faturado por 
+cada mercadoria, que é igual a quantidade vendida da mercadoria vezes o seu 
+preço unitário. O número de mercadorias comercializadas pelo armazém deve 
+ser informado pelo usuário.
+*/
+
+Algoritmo "AlgoritmoEx6Refeito"
+
+var
+
+    qm, i = 0 : inteiro
+    pu, qtd, ftm = 0 : real
+    nome : caractere
+
+início 
+
+    leia qm
+
+    para i de 0 até qm passo de 1 faça
+        leia nome, pu, qtd
+        ftm <- ftm + (qtd * pu)
+
+    escreva ftm 
+
+fim
