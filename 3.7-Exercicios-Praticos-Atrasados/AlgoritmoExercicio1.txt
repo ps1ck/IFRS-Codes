@@ -1,0 +1,47 @@
+/* Escreva um algoritmo (utilizando escolha) e um programa em Java 
+(utilizando switch) que leiam três números inteiros que representam uma data 
+com dia, mês e ano respectivamente. O programa deve escrever esta data da 
+seguinte forma: 
+dia de nome do mês de ano */
+
+Algoritmo "AlgoritmoExercicio1"
+
+var
+
+n1, n2, n3 : inteiro
+
+início
+
+      leia n1,n2,n3
+
+      escolha n2
+
+            caso 1: escreva "n1 de Janeiro de n3"
+
+            caso 2: escreva "n1 de Fevereiro de n3"
+
+            caso 3: escreva "n1 de Março de n3"
+
+            caso 4: escreva "n1 de Abril de n3"
+
+            caso 5: escreva "n1 de Maio de n3"
+
+            caso 6: escreva "n1 de Junho de n3"
+
+            caso 7: escreva "n1 de Julho de n3"
+
+            caso 8: escreva "n1 de Agosto de n3"
+            
+            caso 9: escreva "n1 de Setembro de n3"
+
+            caso 10: escreva "n1 de Outubro de n3"
+
+            caso 11: escreva "n1 de Novembro de n3
+
+            caso 12: escreva "n1 de Dezembro de n3"
+
+            senão: escreva “Valor inválido”
+
+      fim escolha
+
+fim
