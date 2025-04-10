@@ -1,0 +1,36 @@
+Algoritmo “Jogo de Adivinhação (com repita)” --- No repita não foi necessário definir um valor para palpite, já que ele executa o bloco de código ANTES da comparação.
+
+var
+
+       numero_sorteado, palpite: inteiro
+
+início
+
+       numero_sorteado ← sortear um número de 1 a 1000
+
+       repita
+
+              leia palpite
+
+se palpite > numero_sorteado então
+
+
+                    escreva “Muito alto”
+
+              senão
+
+                    se palpite < numero_sorteado então
+
+                          escreva “Muito baixo”
+
+                    senão
+
+                           escreva “Você acertou!”
+
+                    fim se
+
+              fim se
+
+       até que palpite = numero_sorteado
+
+fim

@@ -1,0 +1,39 @@
+Algoritmo “Jogo de Adivinhação (com enquanto)” --- Foi necessário atribuir um valor a palpite antes do início do enquanto porque ele faz a verificação PRIMEIRO e depois executa.
+
+var
+
+       numero_sorteado, palpite: inteiro
+
+início
+
+       numero_sorteado ← sortear um número de 1 a 1000
+
+       palpite ← 0
+
+enquanto palpite != numero_sorteado faça
+
+
+              leia palpite
+
+se palpite > numero_sorteado então
+
+
+                    escreva “Muito alto”
+
+              senão
+
+                    se palpite < numero_sorteado então
+
+                          escreva “Muito baixo”
+
+                    senão
+
+                           escreva “Você acertou!”
+
+                    fim se
+
+              fim se
+
+       fim enquanto
+
+fim

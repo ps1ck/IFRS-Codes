@@ -1,0 +1,39 @@
+Algoritmo “Maior e Menor de 20 notas”
+
+var
+
+nota, maior, menor: real
+
+cont: inteiro
+
+início
+
+       leia nota
+
+       maior ← nota
+
+       menor ← nota
+
+para cont de 2 até 20 faça
+
+leia nota
+
+se nota > maior então
+
+             maior ← nota
+
+fim se
+
+se nota < menor então
+
+             menor ← nota
+
+fim se
+
+fim para 
+
+       escreva “Maior nota: ”, maior
+
+       escreva “Menor nota: ”, menor
+
+fim
