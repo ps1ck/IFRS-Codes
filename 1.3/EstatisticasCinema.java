@@ -7,7 +7,7 @@ public class EstatisticasCinema {
       char nota;
       double mediaIdades = 0.0, percentualPessimo = 0.0;
    
-      for(int cont = 1; cont <= 5; cont++) {
+      for(int cont = 1; cont <= 100; cont++) {
            System.out.printf("--- ESPECTADOR %03d ---\n", cont);
            System.out.printf("Idade: ");
            idade = Integer.parseInt(System.console().readLine());

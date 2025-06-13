@@ -1,0 +1,59 @@
+Algoritmo “Estatísticas do cinema 2”
+
+var
+
+idade, cont, resOtimo, resRuim, somaIdades, resPessimo : inteiro
+maioridade, numPessoas: inteiro
+nota: caractere
+mediaIdades, percPessimo: real
+
+
+início
+
+       resOtimo ← 0
+       resRuim ← 0
+       somaIdades ← 0
+       resPessimo ← 0
+       maioridade ← -1
+       numPessoas ← 0
+
+repita
+
+       leia idade, nota 
+
+              se nota != ‘F’ então
+
+              numPessoas ← numPessoas + 1
+
+                     se nota = ‘A’ então  
+                            resOtimo ← resOtimo + 1
+                     senão
+
+                            se nota = ‘D’ então
+                                   resRuim ← resRuim + 1
+                                   somaIdades ← somaIdades + idade
+                            senão
+
+                                   se nota = ‘E’ então
+                                          resPessimo ← resPessimo + 1
+
+                                          se idade > maiorIdade então
+                                                 maiorIdade ← idade
+                                           fim se
+                                   fim se
+                            fim se
+                     fim se
+              fim se
+até que nota = ‘F’
+
+mediaIdades ← somaIdades / resRuim
+percPessimo ← resPessimo * 100 / numPessoas
+
+escreva resOtimo, mediaIdades, percPessimo, maiorIdade
+
+fim
+
+// Foi necessário incluir um teste após ler a nota e idade , pois se a nota informada for ‘F’, não deve ser processada (ela indica apenas o fim da leitura de dados). 
+Também foi necessário incluir uma nova variável, numPessoas, que foi utilizada para contar o número de entrevistados. Precisamos dessa informação para calcular
+o percentual de respostas “Péssimo”. O cálculo do percentual de respostas “Péssimo” foi realizado multiplicando-se o número de respostas “Péssimo” por 100 e 
+dividindo o resultado pelo número total de entrevistados (armazenado na variável numPessoas). //
