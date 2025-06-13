@@ -1,0 +1,54 @@
+Algoritmo “Estatísticas do cinema”
+
+var
+
+idade, cont, resOtimo, resRuim, somaIdades, resPessimo : inteiro
+maiorIdade: inteiro
+nota: caractere
+mediaIdades: real
+
+início
+
+       resOtimo ← 0
+       resRuim ← 0
+       somaIdades ← 0
+       resPessimo ← 0
+       maioridade ← -1
+
+para cont de 1 até 100 faça
+    leia idade, nota
+    
+    se nota = ‘A’ então
+        resOtimo ← resOtimo + 1
+    senão   
+
+       se nota = ‘D’ então
+        resRuim ← resRuim + 1
+
+        somaIdades ← somaIdades + idade
+
+         senão
+
+            se nota = ‘E’ então
+
+            resPessimo ← resPessimo + 1
+
+                se idade > maiorIdade então
+
+                     maiorIdade ← idade
+
+                fim se
+
+            fim se
+
+       fim se
+       
+fim se
+
+fim para
+
+mediaIdades ← somaIdades / resRuim
+
+escreva resOtimo, mediaIdades, resPessimo, maiorIdade
+
+fim
