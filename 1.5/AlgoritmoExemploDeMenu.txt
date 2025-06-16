@@ -1,0 +1,108 @@
+Algoritmo “Exemplo de menu”
+
+var
+
+opcao : inteiro
+salario, imposto : real
+
+início
+
+       repita
+
+
+escreva “Menu de opções:”
+
+escreva “1. Imposto”
+
+escreva “2. Novo salário”
+
+escreva “3. Classificação”
+
+escreva “4. Finalizar o programa”
+
+leia opcao
+
+
+escolha opcao
+
+
+       caso 1:
+
+             leia salario
+
+             se salario < 1000 então
+
+                    imposto ← salario * 0.05
+
+             senão
+
+                    se salario <= 3000 então
+
+                           imposto ← salario * 0.10
+
+                    senão
+
+                           imposto ← salario * 0.15
+
+                    fim se
+
+             fim se
+
+             escreva imposto
+
+
+       caso 2:
+
+             leia salario
+
+             se salario < 1350 então
+
+                    salario ← salario + 300
+
+             senão
+
+                    se salario < 2250 então
+
+                           salario ← salario + 225
+
+                    senão
+
+                           se salario <= 4500 então
+
+                                  salario ← salario + 150
+
+                           senão
+
+                                  salario ← salario + 75
+
+                           fim se
+
+                    fim se
+
+             fim se
+
+             escreva salario
+
+       caso 3:
+
+             leia salario
+
+             se salario <= 1500 então
+
+                    escreva “Mal remunerado”
+
+             senão
+
+                    escreva “Bem remunerado”
+
+             fim se
+
+       caso 4: escreva “Finalizando programa...”
+
+       senão: escreva “Opção inválida”
+
+fim escolha
+
+       até que opção = 4
+
+fim
