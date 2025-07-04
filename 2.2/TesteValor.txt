@@ -1,0 +1,27 @@
+Algoritmo “Teste Vetor”
+
+var
+
+    numeros : vetor [1..20] de inteiro
+    pos : inteiro
+
+inicio
+
+    para pos de 1 até 20 faça
+
+        numeros[pos] ← pos
+
+    fim para
+
+escreva “Numeros de 1 a 20: ”
+
+    para pos de 1 até 20 faça
+
+        escreva numeros[pos]
+
+    fim para
+
+fim
+
+# Utiliza-se normalmente estruturas para...faça para ler e mostrar valores de posições de vetores, pois podemos utilizar o valor da variável contadora
+#como índice. Como o valor dessa variável muda a cada repetição, uma posição diferente do vetor será lida/escrita a cada repetição do laço.
