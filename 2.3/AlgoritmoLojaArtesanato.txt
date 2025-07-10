@@ -1,0 +1,42 @@
+Algoritmo “LojaArtesanato”
+
+var
+
+    vetValorUnit : vetor [1..10] de real
+    vetQuanVend: vetor [1..10] de inteiro
+    cont, objMaisVend : inteiro
+    total, totalGeral, comissao : real
+
+inicio
+
+para cont de 1 até 10 faça
+
+    leia vetValorUnit[cont], vetQuantVend[cont]
+
+fim para
+
+totalGeral ← 0
+
+para cont de 1 até 10 faça
+    
+    escreva cont, vetQuantVend[cont], vetValorUnit[cont]
+    total ← vetValorUnit[cont] * vetQuantVend[cont]
+    escreva total
+    totalGeral ← totalGeral + total
+
+fim para
+
+comissao ← totalGeral * 0.05
+escreva totalGeral, comissão
+objMaisVend ← 1
+
+para cont de 2 até 10 faça
+
+    se vetQuantVend[cont] > vetQuantVend[objMaisVend] então
+        objMaisVend ← cont
+    fim se
+
+fim para
+
+    escreva objMaisVend, vetorValorUnit[objMaisVend]
+fim
