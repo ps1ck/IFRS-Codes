@@ -1,0 +1,33 @@
+Algoritmo “Media Alturas”
+
+var
+    alturas : vetor [1..10] de inteiro
+    cont, soma, maiores : inteiro
+    media : real
+
+inicio
+
+
+para cont de 1 até 10 faça
+    leia alturas[cont]
+fim para
+
+soma ← 0
+
+para cont de 1 até 10 faça
+    soma ← soma + alturas[cont]
+fim para
+
+media ← soma / 10.0
+
+maiores ← 0
+
+para cont de 1 até 10 faça
+    se alturas[cont] > media então
+        maiores ← maiores + 1
+    fim se
+fim para
+
+escreva maiores
+
+fim

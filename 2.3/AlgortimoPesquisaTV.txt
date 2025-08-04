@@ -1,0 +1,23 @@
+Algoritmo “Pesquisa TV”
+
+var
+
+    contadores : vetor [1..10] de inteiro
+    cont, canal : inteiro
+
+inicio
+
+para cont de 1 até 10 faça
+    contadores[cont] ← 0
+fim para
+
+para cont de 1 até 100 faça
+    leia canal
+    contadores[canal] ← contadores[canal] + 1
+fim para
+
+para cont de 1 até 10 faça
+    escreva contadores[cont], “ assistem o canal ”, cont
+fim para
+
+fim

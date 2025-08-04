@@ -1,0 +1,16 @@
+4. Corrigindo Provas de Múltipla Escolha
+    Nosso problema agora envolve a correção de provas de múltipla escolha. Imagine que você foi contratado por uma escola para desenvolver 
+um programa para corrigir provas. Cada prova possui oito questões e cada questão vale um ponto. O gabarito da prova será informado pelo 
+usuário (cada resposta é identificada por uma letra de A a E). Também serão informados ao programa o número de matrícula de cada aluno e sua 
+resposta a cada questão da prova (existem dez alunos matriculados). O programa deve calcular e mostrar:
+
+        - o número e a nota de cada aluno;
+        - a quantidade de aprovados, sabendo-se que a nota mínima para aprovação é 6.
+
+    Como você pode perceber no enunciado, o gabarito da prova será informado pelo usuário. Precisamos dessa informação primeiro, 
+para poder calcular as notas de cada aluno posteriormente. Logo, começaremos construindo o código para leitura e armazenamento do gabarito.
+
+    O gabarito será composto por oito respostas, onde cada uma será uma letra. Como devemos armazenar vários valores do mesmo tipo, 
+nada melhor do que utilizarmos um vetor! Este vetor deverá ter oito posições (uma para cada questão) e deverá ser do tipo 
+caractere (pois cada posição precisará armazenar uma letra). Assim, o pseudocódigo abaixo mostra a primeira versão de nosso 
+algoritmo, contendo a declaração do vetor e também o código que efetua a leitura dos valores para preenchimento de suas posições.

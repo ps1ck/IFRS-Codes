@@ -1,0 +1,30 @@
+Algoritmo “Busca de valores”
+
+var
+
+numeros : vetor [1..10] de inteiro
+cont : inteiro
+achou: lógico
+
+inicio
+
+para cont de 1 até 10 faça
+
+    leia numeros[cont]
+
+fim para
+
+achou  ← F
+
+para cont de 1 até 10 faça
+    se numeros[cont] > 50 então
+        escreva números[cont], cont
+        achou ← V
+    fim se
+fim para
+
+se não achou então
+    escreva “Nenhum número maior do que 50 foi encontrado.”
+fim se
+
+fim

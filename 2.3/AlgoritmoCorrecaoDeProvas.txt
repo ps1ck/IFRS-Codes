@@ -1,0 +1,38 @@
+Algoritmo “Correção de Provas”
+
+var
+
+gabarito : vetor [1..8] de caractere
+cont, nroMatr, numResp, pontos, aprovados : inteiro
+resposta: caractere
+
+inicio
+
+para cont de 1 até 8 faça
+    leia gabarito[cont]
+fim para
+
+aprovados  ← 0
+
+para cont de 1 até 10 faça
+    leia numMatr
+    pontos ← 0
+
+    para numResp de 1 até 8 faça
+        leia resposta
+            se resposta = gabarito[numResp] então
+                pontos ← pontos + 1
+            fim se
+    fim para
+
+escreva numMatr, pontos
+ 
+    se pontos >= 6 então
+        aprovados ← aprovados + 1
+    fim se
+
+fim para
+
+escreva aprovados
+
+fim

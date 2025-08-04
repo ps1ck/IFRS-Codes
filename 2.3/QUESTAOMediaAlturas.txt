@@ -1,0 +1,9 @@
+2. Somando os Elementos de um Vetor
+    Frequentemente os elementos de um vetor representam uma série de valores que devem ser usados em um cálculo. Por exemplo, se os elementos 
+de um vetor representam as alturas, em centímetros, de várias pessoas, é possível calcular a média de alturas dessas pessoas e verificar 
+quantas delas possuem altura maior do que a média.
+
+    A pseudocódigo abaixo mostra um algoritmo que faz a leitura de alturas de 10 pessoas e armazena essas alturas no vetor alturas. 
+Logo a seguir é feita a leitura das 10 alturas na estrutura para...faça subsequente Note que essa estrutura é muito similar ao código 
+de leitura mostrado no algoritmo anterior. Você vai perceber que esse tipo de código vai sempre ser repetitivo, o que permite um dos 
+poucos momentos em programação onde você pode usar o recurso de copiar e colar.

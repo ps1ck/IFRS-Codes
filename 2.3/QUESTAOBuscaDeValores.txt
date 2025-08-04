@@ -1,0 +1,17 @@
+5. Procurando Números em um Vetor
+    Outra operação bastante comum com vetores é a busca de dados. A ideia com esta operação é obter a posição de um determinado dado 
+dentro do vetor, se ele realmente estiver presente em alguma de suas posições.
+
+    Vamos resolver o seguinte problema:
+
+    Faça um programa que preencha um vetor com dez números inteiros, calcule e mostre os números superiores a cinquenta e suas 
+respectivas posições. O programa deverá mostrar uma mensagem se não existir nenhum número nessa condição.
+
+    O vetor deve ser preenchido de um modo tradicional, como já vimos em outros problemas, através de dados informados pelo usuário. 
+Mas como fazer para procurar um valor em um vetor?
+
+    Esta tarefa pode ser comparada a procurar algo em um gaveteiro. Neste caso, devemos olhar gaveta por gaveta até encontrar o 
+que procuramos. Assim, devemos olhar posição por posição do vetor e comparar o valor armazenado para ver se é igual ao valor que 
+estamos procurando. Se a igualdade for verdadeira, a busca pode ser encerrada, pois o valor foi encontrado. Abaixo o algoritmo 
+elaborado para este problema é mostrado.
+

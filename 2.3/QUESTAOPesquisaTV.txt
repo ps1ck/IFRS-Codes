@@ -1,0 +1,8 @@
+3. Utilizando os Elementos de um Vetor como Contadores
+    Algumas vezes os programas usam uma série de variáveis contadoras para resumir dados, como os resultados de uma pesquisa. 
+Imagine o seguinte problema: foi feita uma pesquisa na rua sobre a audiência de alguns canais de televisão. Nesta pesquisa, cada pessoa 
+respondeu qual o número do canal que mais assistia diariamente (um número de 1 a 10).
+    O problema é escrever um algoritmo que, a partir dos dados da pesquisa (uma lista de respostas de 100 pessoas) mostre o número 
+de pessoas que escolheram cada canal. Com o que conhecíamos antes, seria necessário criar 10 variáveis para contar a quantidade de 
+pessoas que escolheram cada canal. Mas com o uso de vetores, podemos resolver isso com uma única variável!
+    O algoritmo abaixo mostra a solução do problema utilizando um vetor. 
