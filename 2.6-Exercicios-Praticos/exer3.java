@@ -26,11 +26,8 @@ public class exer3 {
             else{gratis[i] = 0;}
 
         }
-
-        for(int i = 0; i <= 7; i++){ System.out.printf("Cliente n° %d:\n  Nome: %s\n  Locações grátis: %d\n",(i+1),nomes[i],gratis[i]); }
-        
-
         sc.close();
 
+        for(int i = 0; i <= 7; i++){ System.out.printf("Cliente n° %d:\n  Nome: %s\n  Locações grátis: %d\n",(i+1),nomes[i],gratis[i]); }
     }
 }
