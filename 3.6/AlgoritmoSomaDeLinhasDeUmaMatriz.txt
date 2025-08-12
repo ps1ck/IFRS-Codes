@@ -1,0 +1,37 @@
+Algoritmo “Soma de Linhas de uma Matriz”
+
+var
+
+    matriz: vetor [1..10, 1..20] de inteiro;
+    somas: vetor [1..10] de inteiro;
+    linha, coluna: inteiro;
+
+inicio
+
+    para linha de 1 até 10 faça
+
+        para coluna de 1 até 20 faça
+            leia matriz[linha,coluna]
+        fim para
+    fim para
+
+    para linha de 1 até 10 faça
+        somas[linha] ← 0
+        
+        para coluna de 1 até 20 faça
+            somas[linha] ←  somas[linha] + matriz[linha,coluna]
+        fim para
+    fim para
+
+    para linha de 1 até 10 faça
+        para coluna de 1 até 20 faça
+            matriz[linha, coluna] ←  somas[linha] * matriz[linha,coluna]
+        fim para
+    fim para
+      
+    para linha de 1 até 10 faça
+        para coluna de 1 até 20 faça
+            escreva matriz[linha,coluna]
+        fim para
+    fim para
+fim 
