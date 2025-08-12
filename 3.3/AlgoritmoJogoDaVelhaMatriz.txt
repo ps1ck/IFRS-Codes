@@ -1,0 +1,29 @@
+Algoritmo "Jogo da Velha Matriz"
+
+var
+    jogador: caractere
+    linha, coluna: inteiro
+    tabuleiro: vetor [1..3, 1..3] de caractere;
+
+inicio
+
+    jogador ← 'X'
+
+
+enquanto condição faça
+
+    escreva 'Jogador ', jogador, " é a sua vez. "
+
+    leia linha, coluna
+
+    fazer a jogada na linha e coluna indicadas
+
+        se jogador = 'X' então
+            jogador ← 'O'
+       senão
+            jogador ← 'X'
+       fim se
+
+fim enquanto
+
+fim

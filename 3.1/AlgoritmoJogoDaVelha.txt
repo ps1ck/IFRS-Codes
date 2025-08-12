@@ -1,0 +1,40 @@
+Algoritmo “Jogo da Velha”
+
+var
+    jogador: caractere
+    linha, coluna: inteiro
+
+inicio
+
+    jogador ← ‘X’
+
+    enquanto condição faça
+
+       escreva “Jogador ”, jogador, “ é a sua vez.”
+
+       leia linha, coluna
+
+       fazer a jogada na linha e coluna indicadas
+
+        se jogador = ‘X’ então
+
+            jogador ← ‘O’
+
+       senão
+
+            jogador ← ‘X’
+
+        fim se
+
+    fim enquanto
+
+fim
+
+Precisamos agora pensar em um modo de representar o tabuleiro na memória, pois precisamos guardar onde estão os Xs e Os jogados pelos jogadores.
+É possível criar nova variáveis, uma para cada célula do tabuleiro, mas essa alternativa é bastante trabalhosa. Um vetor é uma solução possível,
+porém cada célula é identificada por dois números e não por apenas um (lembre-se que cada posição de um vetor é identificada por um único
+índice).
+
+Assim, precisamos de algo similar a um vetor, mas onde cada posição possa ser identificada por dois números: uma linha e uma coluna. 
+Este tipo de estrutura existe e é conhecida como matriz. Neste módulo, você vai aprender a como trabalhar com esse tipo de estrutura em seus
+algoritmos e programas.

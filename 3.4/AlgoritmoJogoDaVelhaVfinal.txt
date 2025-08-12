@@ -1,0 +1,64 @@
+Algoritmo “Jogo da Velha V final” - Escrevi na linha 31, 32 e 62, para fazer o programa mostrar o vencedor ou o empate.
+
+var
+    jogador, vencedor: caractere
+    linha, coluna, cont, contaJogadas : inteiro
+    tabuleiro: vetor [1..3, 1..3] de caractere;
+
+inicio
+
+    jogador ← ‘X’
+    vencedor ← ‘A’
+    contaJogadas ← 0
+
+enquanto vencedor != ‘X’ e vencedor != ‘O’ faça
+
+       escreva “Jogador ”, jogador, “ é a sua vez.”
+       leia linha, coluna
+
+        se linha >= 1 e linha <= 3 e coluna >= 1 e coluna <= 3 então              
+            tabuleiro[linha, coluna] ← jogador        
+        
+            se jogador = ‘X’ então
+                jogador ← ‘O’
+            senão
+                jogador ← ‘X’
+            fim se
+       
+       contaJogadas ← contaJogadas + 1
+
+       se contaJogadas = 9 então
+        vencedor ← ‘E’
+        escreva "Empate!"
+        break
+       fim se
+        
+    para cont de 1 até 3 faça
+
+        se tabuleiro[cont,1] = tabuleiro[cont,2] e tabuleiro[cont,2] = tabuleiro[cont,3] então
+            vencedor ← tabuleiro[cont,1]
+        fim se
+
+        se tabuleiro[1,cont] = tabuleiro[2,cont] e tabuleiro[2,cont] = tabuleiro[3,cont] então
+            vencedor ← tabuleiro[1,cont]
+        fim se
+
+    fim para
+
+    se tabuleiro[1,1] = tabuleiro[2,2] e tabuleiro[2,2] = tabuleiro[3,3] então
+        vencedor ← tabuleiro[1,1]
+    fim se
+
+    se tabuleiro[1,3] = tabuleiro[2,2] e tabuleiro[2,2] = tabuleiro[3,1] então
+        vencedor ← tabuleiro[1,3]
+    fim se
+    
+        senão
+            escreva “Essa posição não existe!”
+        fim se
+
+fim enquanto
+
+    escreva "O vencedor foi: ", vencedor
+
+fim
