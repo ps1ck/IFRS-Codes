@@ -23,7 +23,7 @@ public class exr1 {
         sc.close();
 
         for(int linha = 0; linha < 6; linha++){
-            maior = 0;
+            maior = matriz[linha][0];;
             for(int coluna = 0; coluna < 4; coluna++){
                 if(matriz[linha][coluna] > maior){
                     maior = matriz[linha][coluna];
