@@ -1,0 +1,51 @@
+// Faça um sub-algoritmo que retorne 1 se um determinado número for positivo ou 0 se for negativo.
+
+função positivoOuNegativo(num: real) : inteiro
+início
+       se num < 0 então
+             retorne 0
+       senão
+             retorne 1
+       fim se
+fim
+
+
+EM JAVA, SERIA:
+
+static int positivoOuNegativo( double num ) {
+
+       if(num < 0)
+
+             return 0;
+
+       else
+
+             return -1;
+
+}
+
+APLICAÇÃO EM JAVA ->
+
+public class CalculaRaizQuadrada {
+
+       // A definição do método positivoOuNegativo deve ser colocada aqui.
+
+       public static void main(String[] args) {
+
+             double numero;
+
+             System.out.print(“Numero: “);
+
+             numero = Double.parseDouble(System.console().readLine());
+
+             if(positivoOuNegativo(numero) == 1)
+
+                    System.out.printf(“Raiz quadrada = %f\n”, Math.sqrt(numero));
+
+             else
+
+                    System.out.println(“Não é possível calcular a raiz quadrada.”);
+
+       }
+
+}

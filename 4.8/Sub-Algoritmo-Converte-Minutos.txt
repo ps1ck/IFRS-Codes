@@ -1,0 +1,22 @@
+// Faça um sub-algoritmo que receba um único valor representando minutos. Esse sub-algoritmo deverá convertê-lo para horas e minutos, mostrando o resultado na tela.
+
+procedimento converteMinutos(minutos: inteiro) // procedimento porque não precisa retornar valor, já imprime direto na tela...
+var
+     horas, min: inteiro
+início
+     horas ← minutos div 60
+     min ← minutos mod 60
+     escreva horas, min
+fim
+
+Em JAVA: 
+
+static void converteMinutos( int minutos ) {
+
+       int horas = minutos / 60;
+
+       int min = minutos % 60;
+
+       System.out.printf(“%02d:%02d\n”, horas, min);
+
+}

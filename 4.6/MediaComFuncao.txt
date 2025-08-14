@@ -1,0 +1,17 @@
+Algoritmo "Media Com Função"
+var
+    Z : real
+função Media(X, Y : real) : real
+inicio
+    retorne ( X + Y ) / 2
+fim
+
+inicio
+    Z ← Media( 8, 7 )
+    escreva Z
+fim
+
+// Observações importantes: "Parâmetros formais que tenham o mesmo tipo são listados juntos, separados por vírgula (como mostrado acima). Caso o sub-algoritmo
+// possua parâmetros com tipos diferentes, estes devem ser separados por ponto-e-vírgula. Por exemplo, se a função Media fosse definida com um parâmetro inteiro
+// e um real, o seu cabeçalho seria:"
+//                                       "  função Media( X : inteiro; Y : real) : real  "

@@ -1,0 +1,35 @@
+// Faça uma sub-rotina que receba dois números positivos por parâmetro e retorne a soma dos N números inteiros existentes entre eles.
+
+função somaIntervalo(num1, num2: inteiro) : inteiro
+var
+     cont, soma: inteiro
+início
+     soma ← 0
+     para cont de num1+1 até num2-1 faça
+           soma ← soma + cont
+     fim para
+     retorne soma
+fim
+
+Em JAVA:
+
+static int somaIntervalo( int num1, int num2 ) {
+
+       int soma = 0;
+
+       for(int cont = num1+1; cont < num2; cont++) {
+
+             soma += cont;
+
+       }
+
+       return soma;
+
+}
+
+Utilizações -> 
+Este método poderia facilmente ser utilizado em diversos casos, como por exemplo:
+
+-> Calcular a soma de números entre 1 e 10:     somaIntervalo(1, 10)
+
+-> Calcular a soma de números entre 2 e o valor de uma variável inteira N:      somaIntervalo(2, N)

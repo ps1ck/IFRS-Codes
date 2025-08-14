@@ -1,0 +1,119 @@
+// Imagine que nosso problema agora seja  construir um programa que permita aos proprietários de um estacionamento calcular os valores a pagar pelos seus clientes.
+// Neste estacionamento , o cliente paga um valor fixo de R$ 10,00 para estacionar até 2 horas. Após esse período, é cobrado um valor extra de R$ 2,50 por hora 
+// utilizada a mais. Nenhum veículo utiliza o estacionamento por um período igual ou superior a 24 horas.
+
+função calculaDiferenca(hE, mE, hS, mS: inteiro) : inteiro
+var
+     minutosEnt, minutosSai: inteiro
+início
+     minutosEnt ← hE * 60 + mE
+     se hS < hE então
+          hS ← hS + 24
+     fim se
+     minutosSai ← hS * 60 + mS
+     retorne minutosSai - minutosEnt
+fim
+
+função calculaValor(tempoMinutos: inteiro) : real
+var
+          horasExtras: inteiro
+início
+          se tempoMinutos <= 120 então
+                retorne 10.00;
+          senão
+                horasExtras ← Math.ceil((tempoMinutos-120) div 60);
+                retorne 10.00 + horasExtras * 2.50;
+          fim se
+fim
+
+----------   Essas funções em JAVA:
+
+static int calculaDiferenca(int hE, int mE, int hS, int mS) {
+
+       int minutosEnt = hE * 60 + mE;
+
+       if(hS < hE)
+
+             hS = hS + 24;
+
+       int minutosSai = hS * 60 + mS;
+
+return minutosSai - minutosEnt;
+
+}
+
+static double calculaValor(int tempoMinutos) {
+
+       if(tempoMinutos <= 120)
+
+             return 10.00;
+else {
+             int horasExtras = (int) Math.ceil((tempoMinutos-120) / 60.0);
+
+             return 10.00 + horasExtras * 2.50;
+       }
+}
+
+---------- ALGORITMO COMPLETO:
+Algoritmo “Cobrança de Estacionamento”
+var
+
+    horaEnt, minEnt, horaSai, minSai, tempoMin : inteiro
+    valorAPagar : real
+
+inicio
+
+       leia horaEnt, minEnt, horaSai, minSai
+
+tempoMin ← calculaDiferenca(horaEnt, minEnt, horaSai, minSai)
+
+converteMinutos(tempoMin)
+
+valorAPagar ← calculaValor(tempoMin)
+
+escreva valorAPagar
+
+fim  
+
+----------  COMPLETO EM JAVA:
+
+public class CobrancaEstacionamento {
+
+       // A definição dos métodos converteMinutos, calculaDiferenca e calculaValor
+
+       // deve ser colocada aqui.
+
+       public static void main(String[] args) {
+
+             int horaEnt, minEnt, horaSai, minSai, tempoMin;
+            double valorAPagar;
+
+             System.out.println(“--- HORARIO DE ENTRADA ---”);
+
+             System.out.print(“Hora: ”);
+
+             horaEnt = Integer.parseInt(System.console().readLine());
+
+             System.out.print(“Minuto: ”);
+
+             minEnt = Integer.parseInt(System.console().readLine());
+
+             System.out.println(“--- HORARIO DE SAIDA ---”);
+
+             System.out.print(“Hora: ”);
+
+             horaSai = Integer.parseInt(System.console().readLine());
+
+             System.out.print(“Minuto: ”);
+
+             minSai = Integer.parseInt(System.console().readLine());
+
+tempoMin = calculaDiferenca(horaEnt, minEnt, horaSai, minSai);
+
+converteMinutos(tempoMin);
+
+valorAPagar = calculaValor(tempoMin);
+
+System.out.printf(“Valor a pagar = R$ %.2f\n”, valorAPagar);
+       }
+}
