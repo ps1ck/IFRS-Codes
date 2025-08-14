@@ -1,0 +1,31 @@
+Algoritmo “Exemplo Variáveis”
+var
+    X : real
+    I : inteiro
+
+função Func() : real
+var
+    X, Y : literal
+inicio
+    ...
+fim
+
+procedimento Proc()
+var
+    Y : literal;
+inicio
+    ...
+    X ← 4 * X
+    I ← I + 1
+    ...
+Fim
+
+inicio
+    ...
+    X ← 3.5
+    ...
+fim
+
+// Observações importantes: "as variáveis X e I são globais e visíveis a todos os sub-algoritmos, com exceção da função Func, que redefine a 
+// variável X localmente. Isso pode acontecer, quando um procedimento ou função define uma variável local com o MESMO nome de uma variável 
+// global. Neste caso, o procedimento ou função enxerga SOMENTE a variável LOCAL e não consegue acesso à variável global;"

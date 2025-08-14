@@ -1,0 +1,27 @@
+Algoritmo "Histograma"
+var
+    n1, n2, n3, n4, n5 : inteiro
+procedimento MostraColuna(N : inteiro)
+var
+    cont : inteiro
+inicio
+    para cont de 1 até N faça
+        escreva “*”
+    fim para
+fim
+
+inicio
+    leia n1, n2, n3, n4, n5
+    MostraColuna(n1)
+    MostraColuna(n2)
+    MostraColuna(n3)
+    MostraColuna(n4)
+    MostraColuna(n5)
+fim
+
+
+// Observações importantes: "Como os procedimentos não retornam valores, não podem ser usados em expressões, como as funções."
+// "Quando utilizar uma função e quando utilizar um procedimento? Deve-se optar por uma função quando se tem interesse num valor resultante 
+// do processamento. Por exemplo, dado um número, verificar se ele é par. Neste caso, o mais adequado seria o emprego de uma função cujo retorno
+// é do tipo lógico, pois se deseja uma resposta entre “sim” (V) e “não” (F). Mas, por outro lado, se o sub-algoritmo não precisa produzir um valor
+// como resultado, o mais adequado é o uso de procedimentos. Um caso seria, por exemplo, mostrar um texto na tela."

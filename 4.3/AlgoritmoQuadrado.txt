@@ -1,0 +1,16 @@
+Algoritmo "Quadrado"
+var
+    N : real
+
+função Quad(num : real) : real
+var
+    resultado : real
+início
+    resultado ← num * num
+    retorne resultado
+fim
+
+início
+    leia N
+    escreva Quad(N)
+fim

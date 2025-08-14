@@ -1,0 +1,31 @@
+Algoritmo “Exemplo Retorne”
+
+var
+
+    numero : inteiro
+
+função FuncA(N : inteiro) : literal
+
+var
+
+    str : literal
+
+inicio
+
+    str ← “Teste”
+
+    retorne str + N                                  // Como tem um retorne aqui, a mensagem a baixo não vai ser executada!
+
+    escreva “Mensagem Oculta”
+
+fim
+
+inicio
+
+    escreva “Informe um número inteiro: ”
+
+    leia numero
+
+    escreva FuncA(numero)
+    
+fim
